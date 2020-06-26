@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <ProgressBar
+        android:id="@+id/my_progressBar"
+        android:visibility="gone"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"/>
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/image" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/image_shadow_gradient"/>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="top"
+        android:weightSum="3">
+
+
+        <TextView
+            android:id="@+id/titleOfAPOD"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:minLines="2"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:text="@string/please_turn_on_the_internet_for_the_photo_of_the_day"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/datePick"
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:tint="@android:color/white"
+            android:src="@drawable/calendar"
+            android:contentDescription="@string/pick_the_date" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/description"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:minLines="2"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/fullScreen"
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:tint="@android:color/white"
+            android:src="@drawable/expand"
+            android:contentDescription="@string/full_screen" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

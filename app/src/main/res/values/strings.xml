@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Juno</string>
+    <string name="image">IMAGE</string>
+    <string name="close">close</string>
+    <string name="please_turn_on_the_internet_for_the_photo_of_the_day">Please turn on the internet for the Photo of the Day</string>
+    <string name="pick_the_date">Pick the date</string>
+    <string name="full_screen">Full Screen</string>
+</resources>
